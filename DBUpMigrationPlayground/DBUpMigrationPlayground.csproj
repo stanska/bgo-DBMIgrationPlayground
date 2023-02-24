@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="Scripts\00006.alter_employeeTerritires_add_NewColumn_table.sql" />
+    <None Remove="Scripts\00007.alter_employeeTerritires_add_NewColumn_IdempotentScript.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\00001.create_tables_initial_state.sql" />
+    <EmbeddedResource Include="Scripts\00002.create_views_initial_state.sql" />
+    <EmbeddedResource Include="Scripts\00004.create_foreign_keys_initial_state.sql" />
+    <EmbeddedResource Include="Scripts\00003.create_data_initial_state.sql" />
+    <EmbeddedResource Include="Scripts\00005.create_stored_procedures_initial_state.sql" />
+    <EmbeddedResource Include="Scripts\00006.alter_employeeTerritires_add_NewColumn_table.sql" />
+    <EmbeddedResource Include="Scripts\00007.alter_employeeTerritires_add_NewColumn_IdempotentScript.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DbUp" Version="5.0.8" />
+    <PackageReference Include="DbUp.Downgrade" Version="2.3.1" />
+  </ItemGroup>
+
+</Project>

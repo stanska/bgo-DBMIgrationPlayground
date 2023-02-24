@@ -1,0 +1,1 @@
+﻿ALTER TABLE [dbo].[EmployeeTerritories]  ADD NewColumn NVARCHAR(20) NOT NULL  DEFAULT 'Sample Text';
