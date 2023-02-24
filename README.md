@@ -1,6 +1,6 @@
-﻿# [DbUp](https://dbup.readthedocs.io/en/latest/) Migration Playground
+﻿# Database Migration Playground
 
-The solution contains 2 approaches for managing your DB migration.
+The solution contains 2 approaches for managing your database migration.
 
 1) For project where you are using [Entity Framework ORM](./EFMirationPlayground/README.md)
 2) For projects where ORM technology is not used, or the ORM technology does not support the stable migration mechanism similar to Entity Framework Migrations.
