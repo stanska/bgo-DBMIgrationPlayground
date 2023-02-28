@@ -2,11 +2,12 @@
 A Sample [Entity Framework(EF) Core migration](https://learn.microsoft.com/en-us/ef/core/managing-schemas/) playground application using the popular  
 
 ### Quick Start
-Edit the connection string in appsettins.json and run:
+To create a database from the existing migrations table, dit the connection string in appsettins.json and run:
 
 ```powershell
 cd EFMirationPlayground
 dotnet build
+dotnet ef migrations list
 dotnet ef database update
 dotnet run --launch-profile https
 ```
