@@ -1,5 +1,5 @@
 ﻿# [Code First Entity Framework DB Schema Migration - Playground](https://learn.microsoft.com/en-us/ef/core/managing-schemas/)
-A Sample [Entity Framework(EF) Core migration](https://learn.microsoft.com/en-us/ef/core/managing-schemas/) playground application with [sample entities](./Model/) and previously defined migrations.
+A Sample [Entity Framework(EF) Core migration](https://learn.microsoft.com/en-us/ef/core/managing-schemas/) playground application with [sample entities](./Model/) and previously generated [migrations](./Migrations).
 You can apply the existing migration scripts and experiment with new mgirations.
 
 ### Quick Start
