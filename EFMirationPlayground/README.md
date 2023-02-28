@@ -1,5 +1,6 @@
 ﻿# [Code First Entity Framework DB Schema Migration - Playground](https://learn.microsoft.com/en-us/ef/core/managing-schemas/)
-A Sample [Entity Framework(EF) Core migration](https://learn.microsoft.com/en-us/ef/core/managing-schemas/) playground application using the popular  
+A Sample [Entity Framework(EF) Core migration](https://learn.microsoft.com/en-us/ef/core/managing-schemas/) playground application with [sample entities](./Model/) and previously defined migrations.
+You can apply the existing migration scripts and experiment with new mgirations.
 
 ### Quick Start
 To create a database from the existing migrations table, dit the connection string in appsettins.json and run:
